@@ -1,0 +1,5 @@
+debut{
+  entier x;
+  entier y;
+  pour x dans [ 0 .. 5 ] faire y=x+1 fpour;
+}
