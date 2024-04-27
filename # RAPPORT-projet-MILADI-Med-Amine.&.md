@@ -1,6 +1,7 @@
-## Contexte
-Ce projet vise à implémenter un analyseur lexical et syntaxique en Java pour une grammaire donnée. J'utilise une grammaire formelle pour spécifier la structure syntaxique des programmes que notre analyseur sera capable de reconnaître.
-## Grammaire
+## Context
+This project aims to implement a lexical and syntactic analyzer in Java for a given grammar. I use a formal grammar to specify the syntactic structure of the programs that my analyzer will be able to recognize.
+
+## Grammar
 ```P -> S
 S -> debut { S }
 S -> D ; S 
@@ -24,14 +25,16 @@ PE -> - PE
 PE -> non PE
 PE -> id
 ```
-## Analyse Lexicale et Syntaxique
-- **Test analyse lexicale :** ```java TestLexer.java lexer04.txt``` 
-- **Test analyse syntaxique :** ```java Main```
-## Tables
-- **Table des Items**
-- **Table SLR**
-- vous pouvez utiliser ce [site](https://jsmachines.sourceforge.net/machines/slr.html) pour generer les tables de la grammaire choisie
-- ces tables sont untilisées dans le code de ````parser.java````
 
-## Remarque
-- La grammaire choisie est de type LL1 et n’admet pas de doublons dans la table SLR
+## Lexical and Syntactic Analysis
+- **Lexical analysis test:** ```java TestLexer.java lexer04.txt``` 
+- **Syntactic analysis test:** ```java Main```
+
+## Tables
+- **Items Table**
+- **SLR Table**
+- You can use this [link](https://jsmachines.sourceforge.net/machines/slr.html) to generate tables for the chosen grammar.
+- These tables are used in the code of ```parser.java```.
+
+## Note
+- The chosen grammar is of type LL1 and does not admit duplicates in the SLR table.
